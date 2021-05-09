@@ -46,7 +46,7 @@ from bokeh.models.sources import ColumnDataSource, CDSView
 mpl.rc('figure', max_open_warning = 0)
 hv.extension('bokeh')
 cmap = cm.hot
-geolocator = Nominatim(user_agent="lv_agent2")
+geolocator = Nominatim(user_agent="ab_agent2")
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
 ctx = ssl.create_default_context(cafile=certifi.where())
 geopy.geocoders.options.default_ssl_context = ctx
